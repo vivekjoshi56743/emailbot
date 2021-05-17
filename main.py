@@ -43,8 +43,8 @@ def send_email(receiver, subject, message):
 
 
 email_list = {
-    'red': 'bhattharsh144@gmail.com',
-    'bts': 'sarojbhattpwd@gmail.com',
+    'red': 'email id',
+    'bts': 'email id',
     'pink': 'jennie@blackpink.com',
     'lisa': 'lisa@blackpink.com',
     'irene': 'irene@redvelvet.com',
