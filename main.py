@@ -19,6 +19,8 @@ def get_info():
             print('listening...')
             voice = listener.listen(source)
             info = listener.recognize_google(voice)
+            #you can use other api also refer to-
+            #https://github.com/Uberi/speech_recognition/blob/master/examples/microphone_recognition.py
             print(info)
             return info.lower()
     except sr.UnknownValueError:
@@ -31,9 +33,9 @@ def get_info():
 def send_email(receiver, subject, message):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login('joshivivek56743@gmail.com', 'hellohello123@')
+    server.login('sender email', 'sender password')
     email = EmailMessage()
-    email['From'] = 'joshivivek56743@gmail.com'
+    email['From'] = 'sender email'
     email['To'] = receiver
     email['Subject'] = subject
     email.set_content(message)
